@@ -21,6 +21,7 @@ const onEdit = (ele) => {
     localStorage.setItem('EditId', editId)
     let editUrl = `${baseUrl}/posts/${editId}`
     makeApiCall('GET', editUrl)
+    window.scroll(0,0)
 }
 
 const onDelete = (ele) => {
